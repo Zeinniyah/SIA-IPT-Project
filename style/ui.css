@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eae9e8;
+    color: #173d16;
+}
+
+/* HEADER */
+
+header {
+    height: 90px;
+    background: #0d5c0d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: white;
+}
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f7c51e;
+}
+
+.nav-order {
+    background: #f7b91c;
+    color: #111;
+    padding: 16px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+    background: #fffef8;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    padding-left: 5%;
+    z-index: 2;
+}
+
+.tagline {
+    display: inline-block;
+    background: #eef6d9;
+    color: #32652b;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 62px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #075a16;
+}
+
+.description {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.view-btn,
+.order-btn {
+    padding: 17px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.view-btn {
+    background: #086313;
+    color: white;
+}
+
+.order-btn {
+    background: #f7b91c;
+    color: #111;
+}
+
+.hero-image {
+    width: 50%;
+    height: 540px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FEATURES */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 5%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 30%;
+}
+
+.feature span {
+    font-size: 35px;
+}
+
+.feature h3 {
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    color: #666;
+}
+
+/* MENU */
+
+.menu-section {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #173d16;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carousel-window {
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    gap: 35px;
+    transition: transform 0.5s ease;
+}
+
+.food-card {
+    flex: 0 0 calc((100% - 105px) / 4);
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.12);
+    padding-bottom: 20px;
+}
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.food-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.food-card p {
+    margin: 8px 0;
+    color: #d89d00;
+    font-weight: bold;
+}
+
+.food-card button {
+    background: #0d5c0d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.food-card button:hover {
+    background: #f7b91c;
+    color: #111;
+}
+
+/* CAROUSEL BUTTONS */
+
+.carousel-btn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #0d5c0d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: #f7b91c;
+    color: #111;
+}
